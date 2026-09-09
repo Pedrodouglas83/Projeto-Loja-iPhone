@@ -1,0 +1,474 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    }
+
+  body {
+    background-color: #e8e6e7;
+  }  
+
+  header {
+    padding: 18px 37px;
+    background-color: #1d1d1f;
+  }
+
+
+
+
+  .navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .navigation .logo {
+    width: 50px;
+  }
+
+  .navigation ul{
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    list-style: none; /* tira a bolinha da lista */  
+    margin-left: 35rem; 
+  }
+
+  .navigation ul li {
+    color: #888;
+    font-weight: 600;
+    padding-bottom: 4px;
+    transition: all 0.5s ease-in-out;
+     
+  }
+
+  .navigation ul li:hover {
+    color: #fff;
+    border-bottom: 1px solid #fff;
+  } 
+
+  .navigation .check{ /* deixa o botao com a cor branca */  
+  color: #fff;
+  border-bottom: 1px solid #fff;
+  }
+
+
+
+/*MAIN */   
+
+ section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 10rem;
+}
+
+.main-text img{
+  width: 15rem;
+  margin-bottom: 3vh;
+}
+
+.main-text h3 {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.main-text p{
+  margin-right: 14px;
+  margin-bottom: 1.5rem; 
+}
+
+.main-text h6 {
+  color: #999;
+  font-size: 1rem;
+  margin-bottom: 1.5rem; 
+}
+
+.main-text .btn { /* botao comprar */  
+   padding: 10px 25px;
+   background-color: #0071e3;
+   border-radius: 20px;
+   color: #fff;
+   text-decoration: none;
+   font-size: 1.5rem;
+   transition: all 0.5s;
+}
+
+.main-text .btn:hover {
+  opacity: .85;
+  color: black;
+}
+
+.main-text .text h5 {
+   font-size: 1rem;
+   color: #444;
+   margin-top: 2rem;
+   margin-bottom: 2rem;   
+
+}
+
+.main-text .content {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.main-text .content span {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 1px 1px #888;
+  transition: all 0.5s;
+
+}
+
+.main-text .content span:hover{
+  opacity: .60;
+}
+#green{
+  background: #445c42;
+}
+
+#pink{
+  background: #ffc9cf; 
+}
+
+#blue{
+  background: #225f7e;
+}
+
+#black{
+  background: black;
+}
+
+#white{
+  background: #fff;
+}
+
+#red{
+  background: #ae0617;
+}
+
+
+
+/*/// imagem do iphone //////*/
+
+
+.main-img {
+  transition: all 1s ease;
+  z-index: 100;
+}
+
+.main-img img {
+  width: 467px;
+  transform: rotate(-10deg); /* faz a imagem rodar */  
+}
+
+.circle {    /* faz o circulo atras da imagem */ 
+  position: absolute;
+  top: 156px; 
+  left: 0; 
+  width: 100%;
+  height: 100%;
+  background: #445c42;
+  clip-path: circle(800px at right 1000px);
+  }
+
+
+
+/*/// FOOTER //////*/  
+
+footer {
+  background-color: #1d1d1f;
+  color: #e8e6e7;
+  padding-top: 50px;
+  margin-top: 13px;
+}
+
+.container {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+} 
+ 
+.footer-container {
+  width: 33.3%;
+}
+
+h3 {
+  font-size: 28px;
+  margin-bottom: 15px;
+  
+}
+
+.footer-container p {
+ width: 190px;
+ margin: auto;
+ padding: 7px;
+  
+}
+
+
+.footer-container ul {
+  text-align: center;
+  }
+
+
+.list li {
+  width: auto;
+  text-align: center;
+  list-style-type: none; /*/// tira as bolinha list //////*/
+  padding: 7px;
+  position: relative;
+  
+}
+
+.list li a {  
+  color: #fff;
+  text-decoration: none; /*/// tira a linha da baixo do list //////*/
+}
+
+.list li::before {
+  content: '';
+  position: absolute;
+  transform: translate(-50%, -50% );
+  left: 50%;
+  top: 100%;
+  width: 0;
+  height: 2px;
+  background: #444;
+  transition-duration: .5s;
+}
+
+.list li:hover::before {
+  width: 70px;
+}
+
+
+/*/// imagem do icons //////*/
+
+.social-icons {
+  text-align: center;
+
+}
+
+.social-icons img {
+  display: inline-block;
+  padding: 5px;
+  width: 50px;  
+  transition: transform 0.5s ease; 
+}
+
+.social-icons img:hover{
+    transform: translateY(-10px); /*/ Move para cima */
+} 
+
+.button-bar {
+  background-color: #fff;
+  text-align: center;
+  padding: 10px 0;
+  margin-top: 10px;
+}
+
+.button-bar p {
+  color: #1d1d1f;
+  margin: 0;
+  font-size: 16px;
+  padding: 7px;
+}
+
+
+/* Estilo do botão menu */
+
+header .btn-menu-mob {
+  display: none;
+  position: relative;
+  z-index: 9999999999999;
+}
+
+
+header .btn-menu-mob div {
+ background-color: #999;
+ height: 3px;
+ margin: 10px 0;
+ transition: .2s;
+
+}
+
+header .btn-menu-mob .line-menumob-1 {
+  width: 30px;
+}
+
+header .btn-menu-mob .line-menumob-2 {
+  width: 20px;
+}
+
+header .btn-menu-mob .line-menumob-1.ativo1{
+  transform: rotate(45deg) translate(30%);
+} 
+
+header .btn-menu-mob .line-menumob-2.ativo2{
+  transform: rotate(-45deg) translate(30%);
+  width: 30px;
+} 
+
+/*/// Estilo do menu mobile ///*/
+header .menu-mobile {
+  width: 0;
+  height: 0;
+  background-color: #1d1d1f;
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  overflow: hidden;   /* Tudo que tiver vazado vai ficar escondido */
+  transition: .5s;
+}
+
+header .menu-mobile nav {
+  width: 100%;
+}
+
+header .menu-mobile nav ul {
+  list-style: none;
+  
+}
+
+header .menu-mobile nav a {
+  font-size: 24px;
+  text-decoration: none;
+  color: #999;
+  
+  padding: 20px 0; /*paddind junto com o display block fazem o espaçamento */
+  display: block; /*///  //////*/
+
+  transition: .5s;
+}
+
+header .menu-mobile nav a:hover {
+  background-color: #999;
+  color: #1d1d1f;
+   box-shadow: 0 0 20px #999;
+}
+
+header .menu-mobile.abrir {
+  width: 100%;
+  height: 100vh;
+
+}
+
+
+
+/*/// RESPONSIVIDADE  //////*/
+
+@media screen and (max-width: 900px) {
+    header .menu-desktop {
+    display: none;
+  }
+
+
+  header {
+    padding: 36px 36px;    
+}
+
+   section {
+    padding: 3rem 5rem;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+   }
+
+
+  section .circle  {
+    display: none;
+  }
+
+
+  .main-text img{
+  width: 12rem;
+  
+}
+
+.main-text h3 {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.main-text p{
+  font-size: 18px;
+  margin-right: 5px;
+  margin-bottom: 1rem; 
+}
+
+.main-text h6 {
+   margin-bottom: 1.6rem;
+}
+
+.text h5 {
+  display: none;
+}
+
+.content span {
+  display: none;
+}
+
+  .main-img {
+    display: none;
+  }
+
+
+  footer {
+   padding-top: 30px;
+   margin-top: -10px;
+   
+}
+
+.footer-container {
+    width: 50.3%;
+}
+
+.container {
+  display: flex; 
+  flex-direction: column; 
+  align-items: center; 
+} 
+
+
+/*/// imagem do icons //////*/
+
+.social-icons {
+  text-align: center;
+
+
+}
+
+.social-icons img {
+  display: inline-block;
+  padding: 5px;
+  width: 40px;  
+ }
+
+
+ header .btn-menu-mob {
+  display: block;
+}
+
+} 
+
+@media screen and (min-width: 900px) {
+
+  .menu-mobile{
+    display: none;
+  }
+
+ 
+}
+    

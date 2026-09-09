@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+  <title>Iphone</title>
+</head>
+
+<body>
+  <header>
+    <nav class="navigation">
+      <a href="#"><img src="./img/logo.png" alt="logo do iphone" class="logo"></a>
+
+      <ul class="menu-desktop">
+        <li><a href="#"></a>Mac</li>
+        <li><a href="#"></a>iPad</li>
+        <li class="check"><a href="#"></a>Iphone</li>
+        <li><a href="#"></a>Watch</li>
+        <li><a href="#"></a>AirPods</li>
+        <li><a href="#"></a>Só na Apples</li>
+        <li><a href="#"></a>Suporte</li>
+      </ul>
+
+      <div class="btn-menu-mob" id="btn-menu-mob">
+        <div class="line-menumob-1"></div>
+        <div class="line-menumob-2"></div>
+      </div>
+    </nav>
+
+    <div class="menu-mobile" id="menu-mobile">
+        <nav>
+          <ul>
+              <li><a href="#">Mac</a></li>
+              <li><a href="#">iPad</a></li>
+              <li><a href="#">Watch</a></li>
+              <li><a href="#">AirPods</a></li>
+              <li><a href="#">Só na Apples</a></li>
+              <li><a href="#">Suporte</a></li>
+          </ul>
+        </nav>
+      </div>
+
+  </header>
+
+
+  </div><!---menu-mobile-->
+
+
+  <main>
+    <section>
+      <div class="circle"></div>
+      <div class="main-text">
+        <img src="./img/iphone13.png" alt="iphone13">
+        <h3>SEU NOVO SUPER PODER</h3>
+        <P>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum doloribus voluptatem quasi a id. Aspernatur
+          aperiam fuga, <br>
+          excepturi dignissimos dicta blanditiis, eligendi explicabo quibusdam maxime omnis, voluptate inventore
+          mollitia? Incidunt.</P>
+        <h6>A partir de R$6.599</h6>
+        <a href="#" class="btn">Comprar</a>
+        <div class="text">
+          <h5> Escolha sua cor favorita:</h5>
+        </div>
+        <div class="content">
+          <span id="green" onclick="imgSlider('img/green.png'); circleChange('#445c42')"></span>
+          <span id="pink" onclick="imgSlider('img/pink.png'); circleChange('#ffc9cf') "></span>
+          <span id="blue" onclick="imgSlider('img/blue.png'); circleChange('#225f7e') "></span>
+          <span id="black" onclick="imgSlider('img/black.png'); circleChange('#192028') "></span>
+          <span id="white" onclick="imgSlider('img/white.png'); circleChange('#f7f2ee') "></span>
+          <span id="red" onclick="imgSlider('img/red.png'); circleChange('#ae0617') "></span>
+        </div>
+      </div>
+      <div class="main-img">
+        <img src="./img/green.png" alt="imagem do iphone" id="iphone">
+      </div>
+    </section>
+  </main>
+
+
+  <footer>
+    <div class="container">
+      <div class="footer-container">
+        <h3>Contato</h3>
+        <p>Email:info@exemple.com.br</p>
+        <p>phone:011-1234-1567</p>
+        <p>Rua: your Addres 123</p>
+      </div>
+      <div class="footer-container">
+        <h3>Quick link</h3>
+        <ul class="list">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Products</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-container">
+        <h3>Follow Us</h3>
+        <div class="social-icons">
+          <img src="./img/facebook.png" alt="facebook">
+          <img src="./img/twitter.png" alt="twitter">
+          <img src="./img/instagram.png" alt="instagram">
+          <img src="./img/linkedin.png" alt="linkedin">
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="button-bar">
+      <p>&copy; 2026 Feito por Pedro Douglas - Direitos Reservados </p>
+    </div>
+  </footer>
+
+
+
+
+  <script type="text/javascript">
+
+    /* funçao de mudar o celular */
+    function imgSlider(e) {
+      document.querySelector('#iphone').src = e;
+    }
+
+    /* funçao de mudar as cor do circulo */
+    function circleChange(color) {
+      const circle = document.querySelector('.circle');
+      circle.style.background = color;
+    }
+
+
+  </script>
+  <script src="style.js"></script>
+</body>
+
+</html>
